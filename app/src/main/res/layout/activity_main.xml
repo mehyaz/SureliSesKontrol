@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.meyaz.mehmet.sureliseskontrol.MainActivity">
+
+    <Button
+        android:id="@+id/cal"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:background="@color/colorPrimary"
+        android:onClick="cal"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="305dp"
+        android:text=">"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/button3"
+        android:layout_toStartOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/dur"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/cal"
+        android:layout_alignBottom="@+id/cal"
+        android:layout_toEndOf="@+id/sure"
+        android:layout_toRightOf="@+id/sure"
+        android:background="@color/colorAccent"
+        android:onClick="dur"
+        android:text="X"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="221dp"
+        tools:layout_editor_absoluteY="308dp" />
+
+    <TextView
+        android:id="@+id/sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="Çalınan Parça Süre"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/cal"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:layout_toLeftOf="@+id/dur"
+        android:layout_toStartOf="@+id/dur"
+        android:background="@android:color/holo_orange_light"
+        android:text="||"
+        android:textSize="36sp"
+        android:onClick="bekle"/>
+
+</RelativeLayout>
